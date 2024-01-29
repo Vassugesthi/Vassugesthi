@@ -1,0 +1,36 @@
+#print("Program to create a menu with the following options") 
+#1. TO PERFORM ADDITION 
+#2. TO PERFORM SUBTRACTION 
+#3. TO PERFORM MULTIPLICATION 
+#4. TO PERFORM DIVISION 
+def add(n1,n2): 
+ return n1+n2 
+def sub(n1,n2): 
+ return n1-n2
+def mul(n1,n2): 
+ return n1*n2 
+def div(n1,n2): 
+ return n1/n2 
+print("Welcome to the Arithmetic Program") 
+choice =1 
+while(choice!=0): 
+ x = int(input(" Enter the first number\n")) 
+ y = int(input(" Enter the second number\n")) 
+ print("1. TO PERFORM ADDITION") 
+ print("2. TO PERFORM SUBTRACTION") 
+ print("3. TO PERFORM MULTIPLICATION") 
+ print("4. TO PERFORM DIVISION") 
+ print("0. To Exit") 
+ choice = int(input("Enter your choice")) 
+ if choice == 1:
+     print(x, "+" ,y ,"=" ,add(x,y)) 
+ elif choice == 2:
+     print(x, "-" ,y ,"=" ,sub(x,y)) 
+ elif choice == 3:
+     print(x, "*" ,y ,"=" ,mul(x,y)) 
+ elif choice == 4:
+     print(x, "%" ,y ,"=" ,div(x,y)) 
+ elif choice ==0:
+     print("Exit") 
+ else:
+     print("Invalid Choice");
